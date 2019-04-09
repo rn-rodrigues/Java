@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class Robo {
     public static void option0() {
         System.out.println("Fim"+"\n");
     }
