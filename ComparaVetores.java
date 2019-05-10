@@ -26,6 +26,15 @@ public class Vetores {
     }
     
     public static void main(String[] args) {
+		int x[];
+		int y[];
+		Scanner input = new Scanner(System.in);      
+		System.out.println("Digite os elementos do Vetor x: " + "\n");
+        x = new int[input];
+    
+        System.out.println("Idade: "+"\n");             //Leitura da Idade da Pessoa
+        int idade = input.nextInt();
+		Scanner x = new Scanner (System.in);
 		Vetores vetores = new Vetores();
 		Comparacao cVetor = vetores.new Comparacao();
 		boolean testeDeComparacao = cVetor.compararVetor(int x[], int y[]);
