@@ -1,9 +1,9 @@
 import java.util.Scanner;
-//import java.io; biblioteca geral
 public class Funcionario {
 	private String nome;
 	private String cpf;
-	
+	private Funcionario dependentes[];
+
 	public Funcionario(String nome, String cpf) {
 		this.nome = nome;
 		this.cpf = cpf;
@@ -24,6 +24,3 @@ public class Funcionario {
 	}
 
 }
-	
-	
-
