@@ -1,28 +1,24 @@
 import java.util.Scanner;
-//import java.io; biblioteca geral
 public class Main2 {
-	
-	public static void main(String[] args) {
-		Funcionario funcionarios[];
-		funcionarios = new Funcionario[5];
-		int i;
+
+	public void start() {
+ 		Funcionario[] funcionarios;
+		funcionarios = new Funcionario[5];	
+		int i=0;
 		for (i=0; i<funcionarios.length; i++) {
-			String input;
-			input = new String();
-			
-			String input1;
-			input1 = new String();
-			
 			Scanner ler = new Scanner (System.in);
 			System.out.println("Nome do funcionario "+(i+1)+":");
-			
-			input = ler.nextLine();
-			funcionarios[i].setNome(input);
+			String nome = ler.nextLine();
 
 			System.out.println("CPF do funcionario "+(i+1)+":");
-			
-			input1 = ler.nextLine();
-			funcionarios[i].setCpf(input1);
+			String cpf = ler.nextLine();
+
+			funcionarios[i] = new Funcionario(nome, cpf);
 		}
+	}
+	
+	public static void main(String[] args) {
+		Main2 programa = new Main2();
+		programa.start();
 	}
 }
