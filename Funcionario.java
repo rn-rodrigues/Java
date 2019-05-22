@@ -1,8 +1,13 @@
 import java.util.Scanner;
+
 public class Funcionario {
 	private String nome;
 	private String cpf;
-	private Funcionario dependentes[];
+	private Funcionario[] dependentes;
+
+	public Funcionario(){
+
+	}
 
 	public Funcionario(String nome, String cpf) {
 		this.nome = nome;
@@ -23,4 +28,17 @@ public class Funcionario {
 		return cpf;
 	}
 
+	public void setDependentes(Funcionario[] dep){
+		dependentes = dep;
+	}
+	
+	public Funcionario[] getDependentes(){
+		return dependentes;
+	}
+	public String toString(){
+		return "Nome: " + getNome() + "\n" + "CPF: " + getCpf() + " ";
+	}
+	
 }
+	
+	
